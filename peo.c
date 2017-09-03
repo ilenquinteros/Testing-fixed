@@ -76,10 +76,10 @@ float areaTriangulo(float a, float b){
 int main(void){
 	int x = 0;
 	do{
-		int printValue = printf("CALCULADORA DE AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS\n");
-		if (printValue < 0){
-			perror("An error occurred while displaying the previous error.");
-		}
+		int pf = printf("CALCULADORA DE AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS\n");
+		if (pf == -1) {
+	      perror("Error printed by perror");
+	   	}
 		printf("Selecciona tu figura.\n1. Circulo.\n");
 		printf("1. Circulo.\n");
 		printf("2. Cuadrado.\n");
