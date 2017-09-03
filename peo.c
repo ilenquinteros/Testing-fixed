@@ -100,7 +100,7 @@ int main(){
 				break;
 			case 3:	
 				printf("Ingrese los lados del triangulo rectangulo\n");
-				int t1, t2, t3;
+				int t1 = 0, t2 = 0, t3 = 0;
 				printf("Base: ");
 				scanf("%d", &t1);
 				printf("Altura: ");
