@@ -84,6 +84,8 @@ int main(){
 				printf("Ingresa radio de circulo\n");
 				int r;
 				scanf("%d", &r);
+				float periCir = 0;
+				float areaCir = 0;
 				float periCir = perimetroCirculo(r);
 				float areaCir = areaCirculo(r);
 				printf("\nEl perimetro del circulo es %f\n", periCir);
