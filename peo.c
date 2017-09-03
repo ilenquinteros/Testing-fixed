@@ -4,12 +4,30 @@
 #define PI 3.14159265358979323846
 
 bool menorIgualCero(float x){
+	bool answer = false;
 	if( x <= (float)0 ){
 		printf("Valor invalido\n");
-		return true;
-	}else{
-		return false;
+		answer = true;
 	}
+	return answer;
+}
+
+bool menorIgualCero2(float x, float y){
+	bool answer = false;
+	if( x <= (float)0 || y <= (float)0){
+		printf("Valores invalido\n");
+		answer = true;
+	}
+	return answer;
+}
+
+bool menorIgualCero3(float x, float y, float z){
+	bool answer = false;
+	if( x <= (float)0 || y <= (float)0 || z <= (float)0){
+		printf("Valores invalidos\n");
+		answer = true;
+	}
+	return answer;
 }
 
 float perimetroCirculo(float a){
@@ -41,21 +59,15 @@ float areaCuadrado(float a){
 }
 
 float perimetroTriangulo(float a, float b, float c){
-	if( a <= 0){
-		printf("Ingrese otro valor\n");
-	}
-	else{
-		float result = a + b + c;
+	if(!menorIgualCero3(a, b, c)){
+		float result = (float)(a + b + c);
 		return result;
 	}
 }
 
 float areaTriangulo(float a, float b){
-	if( a <= 0){
-		printf("Ingrese otro valor\n");
-	}
-	else{
-		float result = (a * b)/2;
+	if(!menorIgualCero2(a, b)){
+		float result = (float)((a * b)/2);
 		return result;
 	}
 }
