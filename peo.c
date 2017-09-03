@@ -3,24 +3,21 @@
 #define PI 3.14159265358979323846
 
 float perimetroCirculo(float a){
-	float cero = 0.0;
-	if( a <= cero){
+	if( a <= 0.000000){
 		printf("Ingrese otro valor\n");
 	}
 	else{
-		float result;
-		result = 2 * PI * a;
+		float result = 2 * PI * a;
 		return result;
 	}
 }
 
 float areaCirculo(float a){
-	if( a <= 0){
+	if( a <= 0.000000){
 		printf("Ingrese otro valor\n");
 	}
 	else{
-		float result;
-		result = PI * pow(a, 2);
+		float result = PI * pow(a, 2);
 		return result;
 	}
 }
@@ -30,8 +27,7 @@ float perimetroCuadrado(float a){
 		printf("Ingrese otro valor\n");
 	}
 	else{
-		float result;
-		result = a *4;
+		float result = a *4;
 		return result;
 	}
 }
@@ -41,8 +37,7 @@ float areaCuadrado(float a){
 		printf("Ingrese otro valor\n");
 	}
 	else{
-		float result;
-		result = pow(a, 2);
+		float result = pow(a, 2);
 		return result;
 	}
 }
@@ -52,8 +47,7 @@ float perimetroTriangulo(float a, float b, float c){
 		printf("Ingrese otro valor\n");
 	}
 	else{
-		float result;
-		result = a + b + c;
+		float result = a + b + c;
 		return result;
 	}
 }
