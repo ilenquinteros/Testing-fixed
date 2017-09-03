@@ -3,7 +3,7 @@
 #define PI 3.14159265358979323846
 
 float perimetroCirculo(float a){
-	if( a == 0){
+	if( a <= 0){
 		printf("Ingrese otro valor\n");
 	}
 	else{
@@ -14,7 +14,7 @@ float perimetroCirculo(float a){
 }
 
 float areaCirculo(float a){
-	if( a == 0){
+	if( a <= 0){
 		printf("Ingrese otro valor\n");
 	}
 	else{
@@ -25,7 +25,7 @@ float areaCirculo(float a){
 }
 
 float perimetroCuadrado(float a){
-	if( a == 0){
+	if( a <= 0){
 		printf("Ingrese otro valor\n");
 	}
 	else{
@@ -36,7 +36,7 @@ float perimetroCuadrado(float a){
 }
 
 float areaCuadrado(float a){
-	if( a == 0){
+	if( a <= 0){
 		printf("Ingrese otro valor\n");
 	}
 	else{
@@ -47,7 +47,7 @@ float areaCuadrado(float a){
 }
 
 float perimetroTriangulo(float a, float b, float c){
-	if( a == 0){
+	if( a <= 0){
 		printf("Ingrese otro valor\n");
 	}
 	else{
@@ -58,7 +58,7 @@ float perimetroTriangulo(float a, float b, float c){
 }
 
 float areaTriangulo(float a, float b){
-	if( a == 0){
+	if( a <= 0){
 		printf("Ingrese otro valor\n");
 	}
 	else{
@@ -69,7 +69,7 @@ float areaTriangulo(float a, float b){
 }
 
 
-int main(){
+int main(int argc, const char* argv[]){
 	int x = 0;
 	do{
 		printf("CALCULADORA DE AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS\n");
