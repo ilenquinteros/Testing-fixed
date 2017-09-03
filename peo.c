@@ -70,7 +70,7 @@ float areaTriangulo(float a, float b){
 
 
 int main(){
-	int x;
+	int x = 0;
 	do{
 		printf("CALCULADORA DE AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS\n");
 		printf("Selecciona tu figura.\n");
@@ -82,21 +82,17 @@ int main(){
 		switch(x){
 			case 1:
 				printf("Ingresa radio de circulo\n");
-				int r;
+				int r = 0;
 				scanf("%d", &r);
-				float periCir = perimetroCirculo(r);
-				float areaCir = areaCirculo(r);
-				printf("\nEl perimetro del circulo es %f\n", periCir);
-				printf("El area del circulo es %f\n\n", areaCir);
+				printf("\nEl perimetro del circulo es %f\n", perimetroCirculo(r));
+				printf("El area del circulo es %f\n\n", areaCirculo(r));
 				break;
 			case 2:
 				printf("Ingrese lado cuadrado\n");
-				int c;
+				int c = 0;
 				scanf("%d", &c);
-				float periCuadr = perimetroCuadrado(c);
-				float areaCuadr = areaCuadrado(c);
-				printf("\nEl perimetro del cuadrado es %f\n", periCuadr);
-				printf("El area del cuadrado es %f\n\n", areaCuadr);
+				printf("\nEl perimetro del cuadrado es %f\n", perimetroCuadrado(c));
+				printf("El area del cuadrado es %f\n\n", areaCuadrado(c));
 				break;
 			case 3:	
 				printf("Ingrese los lados del triangulo rectangulo\n");
