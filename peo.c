@@ -14,7 +14,7 @@ bool menorIgualCero(float x){
 
 bool menorIgualCero2(float x, float y){
 	bool answer = false;
-	if( x <= (float)0 || y <= (float)0){
+	if( (x <= (float)0) || (y <= (float)0)){
 		printf("Valores invalido\n");
 		answer = true;
 	}
@@ -23,7 +23,7 @@ bool menorIgualCero2(float x, float y){
 
 bool menorIgualCero3(float x, float y, float z){
 	bool answer = false;
-	if( x <= (float)0 || y <= (float)0 || z <= (float)0){
+	if( (x <= (float)0) || (y <= (float)0) || (z <= (float)0)){
 		printf("Valores invalidos\n");
 		answer = true;
 	}
