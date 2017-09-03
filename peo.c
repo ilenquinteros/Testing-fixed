@@ -32,8 +32,7 @@ bool menorIgualCero3(float x, float y, float z){
 
 float perimetroCirculo(float a){
 	if(!menorIgualCero(a)){
-		float result = (float)(2 * PI * a);
-		return result;
+		return (2 * PI * a);
 	}
 }
 
@@ -76,11 +75,8 @@ float areaTriangulo(float a, float b){
 int main(void){
 	int x = 0;
 	do{
-		int pf = printf("CALCULADORA DE AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS\n");
-		if (pf < 0) {
-	      return NULL;
-	   	}
-		printf("Selecciona tu figura.\n1. Circulo.\n");
+		printf("CALCULADORA DE AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS\n");
+		printf("Selecciona tu figura.\n");
 		printf("1. Circulo.\n");
 		printf("2. Cuadrado.\n");
 		printf("3. Triangulo.\n");
