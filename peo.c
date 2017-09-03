@@ -77,8 +77,8 @@ int main(void){
 	int x = 0;
 	do{
 		int pf = printf("CALCULADORA DE AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS\n");
-		if (pf == -1) {
-	      perror("Error printed by perror");
+		if (pf < 0) {
+	      return NULL;
 	   	}
 		printf("Selecciona tu figura.\n1. Circulo.\n");
 		printf("1. Circulo.\n");
