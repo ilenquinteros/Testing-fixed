@@ -63,7 +63,6 @@ float areaTriangulo(float a, float b){
 		printf("Ingrese otro valor\n");
 	}
 	else{
-		float result;
 		float result = (a * b)/2;
 		return result;
 	}
