@@ -77,48 +77,45 @@ int main(void){
 	int x = 0;
 	do{
 		
-		if (printf("CALCULADORA DE AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS\n") < 0)
-		{
-			perror("ERROR");
-		}
-		printf("Selecciona tu figura.\n");
-		printf("1. Circulo.\n");
-		printf("2. Cuadrado.\n");
-		printf("3. Triangulo.\n");
-		printf("0. Salir.\n");
+		if (printf("CALCULADORA DE AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS\n") < 0) perror("ERROR");
+		if (printf("Selecciona tu figura.\n") < 0) perror("ERROR");
+		if (printf("1. Circulo.\n") < 0) perror("ERROR");
+		if (printf("2. Cuadrado.\n") < 0) perror("ERROR");
+		if (printf("3. Triangulo.\n") < 0) perror("ERROR");
+		if (printf("0. Salir.\n") < 0) perror("ERROR");
 		scanf("%d", &x);
 		switch(x){
 			case 1:
-				printf("Ingresa radio de circulo\n");
+				if (printf("Ingresa radio de circulo\n") < 0) perror("ERROR");
 				int r = 0;
 				scanf("%d", &r);
-				printf("\nEl perimetro del circulo es %f\n", perimetroCirculo(r));
-				printf("El area del circulo es %f\n\n", areaCirculo(r));
+				if (printf("\nEl perimetro del circulo es %f\n", perimetroCirculo(r)) < 0) perror("ERROR");
+				if (printf("El area del circulo es %f\n\n", areaCirculo(r)) < 0) perror("ERROR");
 				break;
 			case 2:
-				printf("Ingrese lado cuadrado\n");
+				if (printf("Ingrese lado cuadrado\n") < 0) perror("ERROR");
 				int c = 0;
 				scanf("%d", &c);
-				printf("\nEl perimetro del cuadrado es %f\n", perimetroCuadrado(c));
-				printf("El area del cuadrado es %f\n\n", areaCuadrado(c));
+				if (printf("\nEl perimetro del cuadrado es %f\n", perimetroCuadrado(c)) < 0) perror("ERROR");
+				if (printf("El area del cuadrado es %f\n\n", areaCuadrado(c)) < 0) perror("ERROR");
 				break;
 			case 3:	
-				printf("Ingrese los lados del triangulo rectangulo\n");
+				printf("Ingrese los lados del triangulo rectangulo\n") < 0) perror("ERROR");
 				int t1 = 0, t2 = 0, t3 = 0;
-				printf("Base: ");
+				if (printf("Base: ") < 0) perror("ERROR");
 				scanf("%d", &t1);
-				printf("Altura: ");
+				if (printf("Altura: ") < 0) perror("ERROR");
 				scanf("%d", &t2);
-				printf("Hipotenusa ");
+				if (printf("Hipotenusa ") < 0) perror("ERROR");
 				scanf("%d", &t3);
-				printf("\nEl perimetro del triangulo es %f\n", perimetroTriangulo(t1, t2 ,t3));
-				printf("El area del triangulo es %f\n\n", areaTriangulo(t1, t2));
+				if (printf("\nEl perimetro del triangulo es %f\n", perimetroTriangulo(t1, t2 ,t3)) < 0) perror("ERROR");
+				if (printf("El area del triangulo es %f\n\n", areaTriangulo(t1, t2)) < 0) perror("ERROR");
 				break;
 			case 0:
-				printf("Gracias por usar esta calculadora\n");
+				if (printf("Gracias por usar esta calculadora\n") < 0) perror("ERROR");
 				break;
 			default:
-				printf("Ingrese un valor valido.\n");
+				if (printf("Ingrese un valor valido.\n") < 0) perror("ERROR");
 				break;
 		}
 	}while(x != 0);
