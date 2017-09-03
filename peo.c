@@ -6,7 +6,7 @@
 bool menorIgualCero(float x){
 	bool answer = false;
 	if( x <= (float)0 ){
-		if (printf("Valor invalido\n")){perror("ERROR");}
+		if (printf("Valores invalidos.\n") < 0){perror("ERROR");}
 		answer = true;
 	}
 	return answer;
@@ -15,7 +15,7 @@ bool menorIgualCero(float x){
 bool menorIgualCero2(float x, float y){
 	bool answer = false;
 	if( (x <= (float)0) || (y <= (float)0)){
-		if (printf("Valores invalido\n")){perror("ERROR");}
+		if (printf("Valores invalidos.\n") < 0){perror("ERROR");}
 		answer = true;
 	}
 	return answer;
@@ -24,7 +24,7 @@ bool menorIgualCero2(float x, float y){
 bool menorIgualCero3(float x, float y, float z){
 	bool answer = false;
 	if( (x <= (float)0) || (y <= (float)0) || (z <= (float)0)){
-		if (printf("Valores invalidos\n")){perror("ERROR");}
+		if (printf("Valores invalidos.\n") < 0){perror("ERROR");}
 		answer = true;
 	}
 	return answer;
