@@ -3,7 +3,8 @@
 #define PI 3.14159265358979323846
 
 float perimetroCirculo(float a){
-	if( a <= 0.0){
+	float cero = 0.0;
+	if( a <= cero){
 		printf("Ingrese otro valor\n");
 	}
 	else{
