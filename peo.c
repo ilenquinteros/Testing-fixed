@@ -84,8 +84,6 @@ int main(){
 				printf("Ingresa radio de circulo\n");
 				int r;
 				scanf("%d", &r);
-				float periCir = 0;
-				float areaCir = 0;
 				float periCir = perimetroCirculo(r);
 				float areaCir = areaCirculo(r);
 				printf("\nEl perimetro del circulo es %f\n", periCir);
@@ -97,8 +95,8 @@ int main(){
 				scanf("%d", &c);
 				float periCuadr = perimetroCuadrado(c);
 				float areaCuadr = areaCuadrado(c);
-				printf("El perimetro del cuadrado es %f\n", periCuadr);
-				printf("El area del cuadrado es %f\n", areaCuadr);
+				printf("\nEl perimetro del cuadrado es %f\n", periCuadr);
+				printf("El area del cuadrado es %f\n\n", areaCuadr);
 				break;
 			case 3:	
 				printf("Ingrese los lados del triangulo rectangulo\n");
@@ -109,10 +107,8 @@ int main(){
 				scanf("%d", &t2);
 				printf("Hipotenusa ");
 				scanf("%d", &t3);
-				float periTrian = perimetroTriangulo(t1, t2 ,t3);
-				float areaTrian = areaTriangulo(t1, t2);
-				printf("El perimetro del triangulo es %f\n", periTrian);
-				printf("El area del triangulo es %f\n", areaTrian);
+				printf("\nEl perimetro del triangulo es %f\n", perimetroTriangulo(t1, t2 ,t3));
+				printf("El area del triangulo es %f\n\n", areaTriangulo(t1, t2));
 				break;
 			case 0:
 				printf("Gracias por usar esta calculadora\n");
