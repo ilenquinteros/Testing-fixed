@@ -62,14 +62,13 @@ float areaTriangulo(float a, float b){
 		printf("Ingrese otro valor\n");
 	}
 	else{
-		float result;
-		result = (a * b)/2;
+		float result = (float)(a * b)/2;
 		return result;
 	}
 }
 
 
-int main(int argc, const char* argv[]){
+int main(void){
 	int x = 0;
 	do{
 		printf("CALCULADORA DE AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS\n");
