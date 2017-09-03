@@ -78,14 +78,11 @@ int main(void){
 	do{
 		
 		int errno = 0;
-		int result = printf("holi");
+		int result = printf("CALCULADORA DE AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS\n");
 		if (result < 0 && errno != 0)
 		{
 			
 		}
-		
-		
-		printf("CALCULADORA DE AREAS Y PERIMETROS DE FIGURAS GEOMETRICAS\n");
 		printf("Selecciona tu figura.\n");
 		printf("1. Circulo.\n");
 		printf("2. Cuadrado.\n");
