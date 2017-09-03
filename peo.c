@@ -3,7 +3,7 @@
 #define PI 3.14159265358979323846
 
 float perimetroCirculo(float a){
-	if( a <= 0){
+	if( a <= 0.0){
 		printf("Ingrese otro valor\n");
 	}
 	else{
@@ -62,7 +62,8 @@ float areaTriangulo(float a, float b){
 		printf("Ingrese otro valor\n");
 	}
 	else{
-		float result = (float)(a * b)/2;
+		float result;
+		float result = (a * b)/2;
 		return result;
 	}
 }
