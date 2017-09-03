@@ -100,7 +100,7 @@ int main(void){
 				if (printf("El area del cuadrado es %f\n\n", areaCuadrado(c)) < 0) perror("ERROR");
 				break;
 			case 3:	
-				printf("Ingrese los lados del triangulo rectangulo\n") < 0) perror("ERROR");
+				if (printf("Ingrese los lados del triangulo rectangulo\n") < 0) perror("ERROR");
 				int t1 = 0, t2 = 0, t3 = 0;
 				if (printf("Base: ") < 0) perror("ERROR");
 				scanf("%d", &t1);
