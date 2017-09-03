@@ -1,43 +1,41 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdbool.h>
 #define PI 3.14159265358979323846
 
-float perimetroCirculo(float a){
-	if( a <= (float)0){
-		printf("Ingrese otro valor\n");
+bool menorIgualCero(float x){
+	if( x <= (float)0 ){
+		printf("Valor invalido\n");
+		return true;
+	}else{
+		return false;
 	}
-	else{
-		float result = 2 * PI * a;
+}
+
+float perimetroCirculo(float a){
+	if(!menorIgualCero(a)){
+		float result = (float)(2 * PI * a);
 		return result;
 	}
 }
 
 float areaCirculo(float a){
-	if( a <= (float)0){
-		printf("Ingrese otro valor\n");
-	}
-	else{
-		float result = (float)PI * pow(a, 2);
+	if(!menorIgualCero(a)){
+		float result = (float)(PI * pow(a, 2));
 		return result;
 	}
 }
 
 float perimetroCuadrado(float a){
-	if( a <= 0){
-		printf("Ingrese otro valor\n");
-	}
-	else{
-		float result = a *4;
+	if(!menorIgualCero(a)){
+		float result = (float)(a *4);
 		return result;
 	}
 }
 
 float areaCuadrado(float a){
-	if( a <= 0){
-		printf("Ingrese otro valor\n");
-	}
-	else{
-		float result = pow(a, 2);
+	if(!menorIgualCero(a)){
+		float result = (float)(pow(a, 2));
 		return result;
 	}
 }
